@@ -189,7 +189,7 @@ get_scale_list <- function(pal_object,
       func <- ifelse(scale_type == "colour",
                      scale_color_gradientn,
                      scale_fill_gradientn)
-      func(colours = pal_object(palette      = palette,
+      func(colours = palette_func(palette      = palette,
                                 palette_list = palette_list,
                                 alpha   = alpha,
                                 reverse = reverse,
